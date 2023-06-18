@@ -1,22 +1,24 @@
+import "./App.css";
+//import { BrowserRouter as Router, Route,Routes } from "react-router-dom";
 
-import './App.css';
-import AboutMe from './Component/AboutMepage';
-import Experience from './Component/Experiencepage';
-import Footer from './Component/FooterPage';
-import Main from './Component/Homepage';
-import NavBar from './Component/NavigationBar';
-import Service from './Component/servicePage';
-
+import AboutMe from "./AboutMepage";
+import Experience from "./Component/Experiencepage";
+import Footer from "./Component/FooterPage";
+import Main from "./Homepage";
+import NavBar from "./Component/NavigationBar";
+import Service from "./Component/servicePage";
 function App() {
   return (
-    <div>
-    <NavBar  />
-    <Main />
-    <AboutMe />
-    <Service />
-    <Experience />
-    <Footer />
-    </div>
+    <main>
+       
+        <NavBar /> 
+        <Main />
+        <AboutMe />
+        <Service />
+      <Experience />
+      <Footer />
+     
+    </main>
   );
 }
 
