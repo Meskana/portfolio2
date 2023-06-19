@@ -393,9 +393,33 @@ li {
 @media  screen and (max-width:900px){
   .modal-content h2{
     font-size: 3vw;
-    
   }
 
+}
+@media  screen and (max-width:900px),  screen and (max-height:400px){
+  .modal-content h2{
+    font-size: 3vw;
+  }
+  .modal-type{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #3aa672;
+    width: 100%;
+    margin-bottom: 0.2rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+
+}
+.modal-btn{
+  margin-top: 1em;
+  padding: 0.2rem 0.4rem;
+  background-color: #3aa672;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
 }
 
 
