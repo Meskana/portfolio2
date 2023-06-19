@@ -16,6 +16,7 @@
   font-weight: bold;
   align-items: baseline;
 }
+
 .nav-box{
   display: flex;
   justify-content: space-between;
@@ -40,7 +41,25 @@ ul {
 li {
   cursor: pointer;
   color: rgb(94, 91, 91);
+  position: relative;
 }
+li:after{
+  content: ' ';
+			position: absolute;
+			height: 2px;
+			width: 0%;
+			left: 0px;
+			bottom: 18px;
+  background-color: #3aa672;
+  transition: 0.31s;
+}
+li:hover:after{
+  width: 100%;
+}
+li:active:after{
+  width: 100%;
+}
+
 .humbager{
   display: none;
 }
@@ -52,13 +71,17 @@ li {
    position: absolute;
    align-items: center;
    top: 3rem;
-   width: 90%;
+   width: 100%;
    backdrop-filter: blur(7px);
-		transition: 0.5s ease-in-out;
-   
+	transition: 0.5s ease-in-out; 
+  left: -100%;
+  }
+  .nav-box.active{
+    left: 0%;
   }
   .humbager{
     display: block;
+    cursor: pointer;
   }
   ul {
     display: flex;
@@ -72,7 +95,22 @@ li {
   .button-nav {
     margin-top: 1rem;
     margin-bottom: 1rem;
+    transition: 0.31s;
   
+  }
+  li:after{
+    content: ' ';
+        position: absolute;
+        height: 2px;
+        width: 0%;
+        left: 0px;
+        bottom: 0px;
+    background-color: #3aa672;
+    transition: 0.31s;
+  }
+  .humbago{
+    font-size: 3vw;
+    color: #3aa672;
   }
 }
 
@@ -290,7 +328,7 @@ li {
   top: 0;
   display: grid;
   place-items: center;
-
+  transition: 0.5s ease-in-out;
   background-color: #181a1998;
 }
 .modal-box {
@@ -300,6 +338,7 @@ li {
   color: white;
   border-radius: 15px;
   position: relative;
+  transition: 0.5s ease-in-out;
 }
 .modal-backgroun {
   background-color: #3aa672;
@@ -307,6 +346,7 @@ li {
   height: 80vh;
   width: 60vw;
   border-radius: 15px;
+  
 }
 .modal-backgroun h1 {
   color: rgba(255, 255, 255, 0.103);
@@ -426,26 +466,28 @@ li {
 /*....STARTING OF EXPERINCE....*/
 
 .container-exp{
-  height: 50vh;
+ min-height: 130vh;
   background-color: #3aa672;
 }
-.exp-con{
- 
+.container-bnt{
+  text-align: center;
+}
+.exp-con{ 
   width: 100%;
-  
-  position: absolute;
+ 
+}
+.exp-con h1{
+  padding-bottom: 20vh;
 }
 .exp-box{
   display: flex;
   flex-wrap: wrap;
   width: 70%;
   margin: auto;
- 
   justify-content: space-between;
   padding: 2rem 3rem;
- position: relative;
- top: 40vh;
- border-radius: 20px;
+
+ border-radius: 20px 20px 0px 0px;
  background-color: white;
  gap:0.5rem
 }
@@ -461,12 +503,116 @@ li {
   max-width: 100%;
   
 }
+.exp-bnt{
+ align-items: center;
+  background-color: #41ad79;
+  padding: 0.7em 3em;
+  color: white;
+  border-radius: 10px;
+  border: transparent;
+  font-weight: bold;
+  cursor: pointer;
+ margin-top:2rem ;
+ margin-bottom: 3rem;
+}
+.exp-con h1{
+  text-align: center;
+  color: white;
+}
+.exp-cont{
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+  min-height: 55vh;
+ 
+ 
+  
+}
+.year{
+  display: flex;
+  width: 40vw;
+  color: whitesmoke;
+  margin: auto;
+  min-height: 50vh;
+ 
+
+}
+
+.exp{
+  border-left: 2px solid white;
+  margin-left: 2rem;
+  position: relative;
+  width: auto;
+
+ 
+ 
+}
+.exp::before{
+  content: "";
+  position: absolute;
+  width: 0.7rem;
+  height: 0.7rem; 
+  left: -0.5rem;
+  top: 0;
+  background-color: #3aa672;
+  border: 2px solid white;
+  border-radius: 50%;
+  
+}
+
+.exp-content{
+ 
+ padding-left: 2rem;
+ padding-right: 2rem;
+ padding-bottom: 2rem;
+}
+.exp-content h4 {
+ padding-bottom: 1rem;
+ }
+ .exp-content h6 {
+  padding-bottom: 0.7rem;
+  }
+  @media  screen and (max-width:900px){
+    .exp-cont{
+     flex-direction: column;
+      width:80%;
+      color: whitesmoke;
+      
+      overflow-y: auto;
+    }
+    .year{
+      display: flex;
+      width: 100%;
+      color: whitesmoke;
+      margin: auto;
+      min-height: 50vh;
+      
+    
+    }
+  }
+
+
+
+  
+/*....STARTING OF FOOTER....*/
+
 .footer{
-  height: 70vh;
-  background-color: whitesmoke;
-  color: rgb(131, 9, 9);
-  
-  font-size: 50px;
-  height: -40vh;
-  
+ text-align: center;
+ padding-top: 3rem;
+ padding-bottom: 3rem;
+}
+.social{
+  color: #3aa672;
+  background-color:whitesmoke;
+  margin: 0px 1.5rem;
+  font-size: 2vw;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: 0.31s;
+}
+.social:hover{
+  background-color: #3aa672;
+  color: white;
+  transition: 0.31s;
 }

@@ -1,4 +1,4 @@
-const file = "http://localhost:3000/cv.docx";
+const file = "http://localhost:3000/MyCv.pdf";
 const AboutMe = () => {
   const download = (url) => {
     const filname = url.split("/").pop();

@@ -1,6 +1,16 @@
-import image from './images/image.png'
+import image from "./images/image.png";
+const file = "http://localhost:3000/MyCv.pdf";
 const Main = () => {
- 
+  const download = (url) => {
+    const filname = url.split("/").pop();
+    const aTag = document.createElement("a");
+    aTag.href = url;
+    aTag.setAttribute("download", filname);
+    document.body.appendChild(aTag);
+    aTag.click();
+    aTag.remove();
+  };
+
   return (
     <main className="main">
       <div className="main-div1">
@@ -15,11 +25,17 @@ const Main = () => {
           visually appealing online experiences while crafting compelling
           written content.
         </p>
-        <button className="button">Download CV</button>
+        <button
+          className="button"
+          onClick={() => {
+            download(file);
+          }}
+        >
+          Download CV
+        </button>
       </div>
       <div className="main-div2">
-      
-        <img src={image} className='main-image'/>
+        <img src={image} className="main-image" />
       </div>
     </main>
   );

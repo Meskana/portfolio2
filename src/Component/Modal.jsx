@@ -23,7 +23,7 @@ export const Modal = ({closeModal}) => {
             <form className="modal-form">
               <input type="text" placeholder="Username" className="modal-type"/>
               <input type="email" placeholder="Email" className="modal-type" />
-              <input type="number" placeholder="Tell us how we can help you!" className="modal-type"/><br />
+              <input type="number" placeholder="Your phone number" className="modal-type"/><br />
               <input type="submit" className="modal-btn"/>
             </form>
           </div>
