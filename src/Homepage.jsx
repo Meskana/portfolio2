@@ -35,7 +35,7 @@ const Main = () => {
         </button>
       </div>
       <div className="main-div2">
-        <img src={image} className="main-image" />
+        <img src={image} className="main-image" alt="passport" />
       </div>
     </main>
   );
