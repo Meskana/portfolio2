@@ -234,14 +234,14 @@ li:active:after {
   font-weight: bold;
   cursor: pointer;
 }
-/*@media screen and (max-width: 920px) {
+@media screen and (max-width: 920px) and (max-height: 1370px) {
   .box1 {
     height: 20vh;
   }
   .box2 {
     height: 20vh;
   }
-}*/
+}
 @media screen and (max-width: 850px) and (max-height: 1100px) {
   .box1 {
     min-width: 40vw;
@@ -254,25 +254,6 @@ li:active:after {
   padding-right: 1em;
 }
 
-/*
-@media screen and (max-width: 600px) {
-  .About {
-    flex-direction: column;
-    margin: auto;
-  }
-  .About-sec1 {
-    width: 85%;
-  }
-  .box1 {
-    width: 80%;
-    height: 30vh;
-  }
-  .box2 {
-    width: 80%;
-    font-size: 1rem;
-    height: 30vh;
-  }
-}*/
 @media screen and (max-width: 431px) and (max-height: 940px) {
   .About {
     flex-direction: column;
