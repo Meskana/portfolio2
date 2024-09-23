@@ -11,7 +11,12 @@ import React from "react";
 const Service = () => {
   return (
     <div className="Skills">
-      <h2>My Skills</h2>
+      <div className="skill-txt">
+        <button className="skill-btn">
+          <h2>My Skills</h2>
+        </button>
+      </div>
+
       <div className="skills-writeUp">
         <p>
           Am highly skilled and versatile web developer and programmer with
@@ -21,7 +26,11 @@ const Service = () => {
           frameworks.
         </p>
       </div>
-      <h2>Key Skills & Expertise</h2>
+      <div className="skill-txt">
+        <button className="skill-btn">
+          <h2>Key Skills & Expertise</h2>
+        </button>
+      </div>
       <div className="skills-card">
         <div className="skills-card-box1">
           <i>
@@ -110,7 +119,7 @@ const Service = () => {
           </p>
         </div>
       </div>
-      <marquee>
+      <marqua>
         <p className="meq">
           <div className="meq-box">
             {" "}
@@ -138,7 +147,7 @@ const Service = () => {
             <FaCss3Alt />
           </div>
         </p>
-      </marquee>
+      </marqua>
     </div>
   );
 };
