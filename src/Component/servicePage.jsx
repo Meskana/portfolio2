@@ -55,10 +55,8 @@ const Service = () => {
           <p>
             <span>JavaScript & React:</span> As a seasoned JavaScript developer,
             i enhances web applications with dynamic and interactive features.
-            Their deep understanding of React allows them to build modern,
-            component-based user interfaces with ease. They utilize React's
-            state management, hooks, and reusable components to create scalable,
-            high-performance web applications.
+            And deep understanding of React allows me to build modern,
+            component-based user interfaces with ease.
           </p>
         </div>
 
@@ -114,14 +112,31 @@ const Service = () => {
       </div>
       <marquee>
         <p className="meq">
-          <FaUbuntu />
-          <FaGithub />
-          <FaPython />
-          <TbBrandJavascript />
-          <FaReact />
-          <FaBootstrap />
-          <FaHtml5 />
-          <FaCss3Alt />
+          <div className="meq-box">
+            {" "}
+            <FaUbuntu />
+          </div>
+          <div className="meq-box">
+            <FaGithub />
+          </div>
+          <div className="meq-box">
+            <FaPython />
+          </div>
+          <div className="meq-box">
+            <TbBrandJavascript />
+          </div>
+          <div className="meq-box">
+            <FaReact />
+          </div>
+          <div className="meq-box">
+            <FaBootstrap />
+          </div>
+          <div className="meq-box">
+            <FaHtml5 />
+          </div>
+          <div className="meq-box">
+            <FaCss3Alt />
+          </div>
         </p>
       </marquee>
     </div>

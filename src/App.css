@@ -422,10 +422,19 @@ li:active:after {
   box-shadow: 0 8px 16px 0 gray;
 }
 .meq {
-  gap: 2em;
+  gap: 1em;
   color: #3aa672;
   font-weight: 1900px;
   font-size: 40px;
+  display: flex;
+}
+.meq-box {
+  border-radius: 10px;
+  margin-top: 1em;
+  padding: 0.4em 1.5em;
+  border-top: 2px solid #3aa672;
+  border-bottom: 2px solid #3aa672;
+  border-right: 2px solid #3aa672;
 }
 @media screen and (max-width: 670px) and (max-height: 380px) {
   .skills-card-box1,
@@ -463,6 +472,7 @@ li:active:after {
     height: 230px;
   }
 }
+
 @media screen and (max-width: 600px) and (max-height: 800px) {
   .skills-card-box1,
   .skills-card-box2,
@@ -519,7 +529,7 @@ li:active:after {
   .skills-card-box5,
   .skills-card-box6,
   .skills-card-box7 {
-    width: 355px;
+    width: 350px;
     height: 250px;
   }
 }
@@ -531,8 +541,20 @@ li:active:after {
   .skills-card-box5,
   .skills-card-box6,
   .skills-card-box7 {
-    width: 350px;
+    width: 330px;
     height: 250px;
+  }
+}
+@media screen and (max-width: 670px) and (max-height: 380px) {
+  .skills-card-box1,
+  .skills-card-box2,
+  .skills-card-box3,
+  .skills-card-box4,
+  .skills-card-box5,
+  .skills-card-box6,
+  .skills-card-box7 {
+    width: 280px;
+    height: 300px;
   }
 }
 /*....STARTING OF MODAL....*/
