@@ -273,7 +273,7 @@ li:active:after {
     height: 45vh;
   }
 }
-@media screen and (max-width: 375px) and (max-height: 667px) {
+@media screen and (max-width: 375px) and (max-height: 670px) {
   .About {
     flex-direction: column;
     margin: auto;
@@ -450,23 +450,28 @@ li:active:after {
   cursor: pointer;
   box-shadow: 0 8px 16px 0 gray;
 }
-.meq {
+.marqua {
+  display: flex;
+  gap: 2em;
+  overflow: hidden;
+}
+.marquee {
   gap: 1em;
   color: #3aa672;
   font-weight: 1900px;
   font-size: 40px;
   display: flex;
-  overflow: hidden;
+
+  animation: move-rtl 20s linear infinite;
+  white-space: nowrap;
 }
 .meq-box {
   border-radius: 10px;
   margin-top: 1em;
   padding: 0.4em 1.5em;
-  white-space: nowrap;
   border-top: 2px solid #3aa672;
   border-bottom: 2px solid #3aa672;
   border-right: 2px solid #3aa672;
-  animation: move-rtl 5000ms linear infinite;
 }
 @keyframes move-rtl {
   0% {

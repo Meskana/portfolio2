@@ -119,10 +119,9 @@ const Service = () => {
           </p>
         </div>
       </div>
-      <marqua>
-        <p className="meq">
+      <div className="marqua">
+        <div className="marquee">
           <div className="meq-box">
-            {" "}
             <FaUbuntu />
           </div>
           <div className="meq-box">
@@ -146,8 +145,35 @@ const Service = () => {
           <div className="meq-box">
             <FaCss3Alt />
           </div>
-        </p>
-      </marqua>
+        </div>
+
+        <div className="marquee">
+          <div className="meq-box">
+            <FaUbuntu />
+          </div>
+          <div className="meq-box">
+            <FaGithub />
+          </div>
+          <div className="meq-box">
+            <FaPython />
+          </div>
+          <div className="meq-box">
+            <TbBrandJavascript />
+          </div>
+          <div className="meq-box">
+            <FaReact />
+          </div>
+          <div className="meq-box">
+            <FaBootstrap />
+          </div>
+          <div className="meq-box">
+            <FaHtml5 />
+          </div>
+          <div className="meq-box">
+            <FaCss3Alt />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
