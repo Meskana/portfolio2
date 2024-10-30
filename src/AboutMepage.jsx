@@ -10,7 +10,7 @@ const AboutMe = () => {
     aTag.remove();
   };
   return (
-    <div>
+    <div id="AboutMe">
       <div className="About-cont">
         <button className="About-bnt">About Me</button>
       </div>
@@ -30,12 +30,12 @@ const AboutMe = () => {
           <h2>Do Some Awesome Stuff With Me </h2>
           <h4>Designer With 10th Experince</h4>
           <p>
-            As a web designer, I possess a deep understanding of user experience
-            (UX) and user interface (UI) design principles. I have a keen eye
-            for aesthetics and strive to create visually stunning websites that
-            are not only visually appealing but also functional and easy to
-            navigate. I am proficient in HTML, CSS, JavaScript, and other
-            relevant web technologies, enabling me to build responsive and
+            As a web developer, I possess a deep understanding of user
+            experience (UX) and user interface (UI) design principles. I have a
+            keen eye for aesthetics and strive to create visually stunning
+            websites that are not only visually appealing but also functional
+            and easy to navigate. I am proficient in HTML, CSS, JavaScript, and
+            other relevant web technologies, enabling me to build responsive and
             dynamic websites that adapt seamlessly across various devices and
             platforms.
           </p>

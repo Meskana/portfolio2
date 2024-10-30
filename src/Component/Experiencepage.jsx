@@ -3,37 +3,43 @@ import image2 from "../images/hotel.png";
 import image3 from "../images/temp.png";
 const Experience = () => {
   return (
-    <div className="container-exp">
-      <div className="container-bnt">
-        <button className="exp-bnt">Projects</button>
-      </div>
-
+    <div className="container-exp" id="Project">
       <section class="section3">
         <h1>My Personal/Fuctuerd Project</h1>
         <div className="sec3">
           <div className="box">
             <img src={image} className="project-image" alt="passport" />
-            <p>
-              took an initiative of opening the company to fill the gap. it aims
-              at understanding its clients wishes, and marking them a reality'
-            </p>
-            <button className="btnt">read more</button>
+            <p>This is CoinResearch App</p>
+            <button className="btnt">
+              <a href="https://github.com/Meskana/Test_project1/tree/main/my_app">
+                GitHub
+              </a>
+            </button>
+            <button className="btnt">
+              <a href="https://portfolio-uoxu.onrender.com/">Preview</a>
+            </button>
           </div>
           <div className="box">
             <img src={image2} className="project-image" alt="passport" />
-            <p>
-              took an initiative of opening the company to fill the gap. it aims
-              at understanding its clients wishes, and marking them a reality'
-            </p>
-            <button className="btnt">read more</button>
+            <p>Thia is Hotel Managment App</p>
+            <button className="btnt">
+              <a href="https://github.com/Muslimbello/Hotel-Management-System/tree/main/clients">
+                GitHub
+              </a>
+            </button>
+            <button className="btnt">
+              <a href="#Main">Preview</a>
+            </button>
           </div>
           <div className="box">
             <img src={image3} className="project-image" alt="passport" />
-            <p>
-              took an initiative of opening the company to fill the gap. it aims
-              at understanding its clients wishes, and marking them a reality'
-            </p>
-            <button className="btnt">read more</button>
+            <p>This is a Templete portfolio i did for a cliant</p>
+            <button className="btnt">
+              <a href="#Main">GitHub</a>
+            </button>
+            <button className="btnt">
+              <a href="#Main">Preview</a>
+            </button>
           </div>
         </div>
       </section>

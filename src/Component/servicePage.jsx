@@ -10,7 +10,7 @@ import { FaUbuntu } from "react-icons/fa";
 import React from "react";
 const Service = () => {
   return (
-    <div className="Skills">
+    <div className="Skills" id="Skills">
       <div className="skill-txt">
         <button className="skill-btn">
           <h2>My Skills</h2>
