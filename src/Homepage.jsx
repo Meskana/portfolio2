@@ -1,5 +1,6 @@
 import image from "./images/image.png";
-const file = "http://localhost:3000/MyCv.pdf";
+const file =
+  "https://drive.google.com/uc?export=download&id=1tHMc6aMa6k2GCLxto0VPbVyuL23Zbt_z";
 const Main = () => {
   const download = (url) => {
     const filname = url.split("/").pop();

@@ -1,6 +1,7 @@
 import image from "../images/coin.png";
 import image2 from "../images/hotel.png";
 import image3 from "../images/temp.png";
+import { FaGithub } from "react-icons/fa";
 const Experience = () => {
   return (
     <div className="container-exp" id="Project">
@@ -12,11 +13,12 @@ const Experience = () => {
             <p>This is CoinResearch App</p>
             <button className="btnt">
               <a href="https://github.com/Meskana/Test_project1/tree/main/my_app">
+                <FaGithub />
                 GitHub
               </a>
             </button>
             <button className="btnt">
-              <a href="https://portfolio-uoxu.onrender.com/">Preview</a>
+              <a href="youtube">Preview</a>
             </button>
           </div>
           <div className="box">
@@ -24,6 +26,7 @@ const Experience = () => {
             <p>Thia is Hotel Managment App</p>
             <button className="btnt">
               <a href="https://github.com/Muslimbello/Hotel-Management-System/tree/main/clients">
+                <FaGithub />
                 GitHub
               </a>
             </button>
@@ -35,10 +38,13 @@ const Experience = () => {
             <img src={image3} className="project-image" alt="passport" />
             <p>This is a Templete portfolio i did for a cliant</p>
             <button className="btnt">
-              <a href="#Main">GitHub</a>
+              <a href="https://github.com/Meskana/portfolio2">
+                <FaGithub />
+                GitHub
+              </a>
             </button>
             <button className="btnt">
-              <a href="#Main">Preview</a>
+              <a href="https://templat-porfolio.onrender.com/">Preview</a>
             </button>
           </div>
         </div>
