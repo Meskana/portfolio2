@@ -20,11 +20,11 @@ const Main = () => {
         </h1>
         <h1>Great to see you</h1>
         <p>
-          I am delighted to take this opportunity to introduce myself as a
-          talented web designer and skilled writer. My passion for creativity
-          and my expertise in both fields have enabled me to create engaging and
-          visually appealing online experiences while crafting compelling
-          written content.
+          Hello! I'm Certified Software Engineer by ALX | Full Stack developer |
+          Computer Engineering graduate at FPO with a strong passion for
+          software development. I specialize in designing, developing, and
+          deploying robust web applications using a diverse range of frontend
+          and backend technologies.
         </p>
         <button
           className="button"
