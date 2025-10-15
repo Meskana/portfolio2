@@ -8,11 +8,12 @@ const NavBar = () => {
   const [showModal, setShowModal] = useState(false);
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
+  const whatsappNumber = "2348168945213";
 
   return (
     <div>
       <div className="navBar">
-        <h2 style={{ color: "#3aa672" }}>CHUK'S</h2>
+        <h2 className="text-[#3aa672] text-2xl">Dev.</h2>
         <div className={click ? "nav-box active" : "nav-box"}>
           <ul>
             <li>
@@ -28,14 +29,14 @@ const NavBar = () => {
               <a href="#Project">Projects</a>
             </li>
           </ul>
-          <button
-            className="button-nav"
-            style={{ float: "right" }}
-            onClick={() => {
-              setShowModal(true);
-            }}
-          >
-            Contact Me
+          <button className="bg-[#3aa672] py-2 px-5 text-white rounded-md text-sm">
+            <a
+              href={`https://wa.me/${whatsappNumber}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Contact Me
+            </a>
           </button>
         </div>
         <div className="humbager" onClick={handleClick}>

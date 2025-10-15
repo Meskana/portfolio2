@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
   margin: 0px;
   padding: 0px;
@@ -22,15 +26,7 @@
   justify-content: space-between;
   width: 50%;
 }
-.button-nav {
-  height: 3em;
-  width: 8.5em;
-  cursor: pointer;
-  background-color: #3aa672;
-  color: white;
-  border-radius: 5px;
-  border: transparent;
-}
+
 ul {
   display: flex;
   gap: 1rem;
@@ -52,7 +48,7 @@ li:after {
   height: 2px;
   width: 0%;
   left: 0px;
-  bottom: 18px;
+  bottom: 13px;
   background-color: #3aa672;
   transition: 0.31s;
 }
@@ -136,15 +132,7 @@ li:active:after {
 .main-div1 {
   width: 50%;
 }
-.main-div1 h1 {
-  font-size: 4vw;
-}
 
-.main-div1 p {
-  padding-top: 1em;
-  padding-bottom: 2em;
-  font-size: 1.1vw;
-}
 .button {
   height: 3em;
   width: 8.5em;
@@ -156,12 +144,6 @@ li:active:after {
 }
 
 @media screen and (max-width: 600px) {
-  .main-div1 h1 {
-    font-size: 2em;
-  }
-  .main-div1 p {
-    font-size: 1rem;
-  }
   .main {
     width: 90%;
     flex-direction: column;
@@ -370,90 +352,6 @@ li:active:after {
 
 /*....STARTING OF SKILLS ....*/
 
-.Skills {
-  background-color: whitesmoke;
-  padding-top: 2em;
-  padding-bottom: 2em;
-}
-.skill-txt {
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-}
-.skill-btn {
-  align-items: center;
-  color: #3aa672;
-  padding: 1em 1.5em;
-  background-color: white;
-  border-radius: 10px;
-  border: none;
-}
-.skills-writeUp {
-  width: 90%;
-  margin: auto;
-  padding-top: 1em;
-  padding-bottom: 1em;
-}
-.skills-card {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 90%;
-  gap: 1em;
-  margin: 1em auto auto auto;
-}
-.skills-card-box1 span,
-.skills-card-box2 span,
-.skills-card-box3 span,
-.skills-card-box4 span,
-.skills-card-box5 span,
-.skills-card-box6 span,
-.skills-card-box7 span {
-  background-color: #3aa672;
-  padding: 0.2em;
-  color: white;
-  font-weight: bolder;
-}
-.skills-card-box1 i,
-.skills-card-box2 i,
-.skills-card-box3 i,
-.skills-card-box4 i,
-.skills-card-box5 i,
-.skills-card-box6 i,
-.skills-card-box7 i {
-  padding: 0.2em;
-  color: #3aa672;
-  font-weight: bolder;
-  display: flex;
-  justify-content: center;
-  font-size: xx-large;
-}
-.skills-card-box1,
-.skills-card-box2,
-.skills-card-box3,
-.skills-card-box4,
-.skills-card-box5,
-.skills-card-box6,
-.skills-card-box7 {
-  background-color: white;
-  width: 370px;
-  padding: 0.9rem;
-  height: 230px;
-  box-shadow: 0 4px 8px 0 gray;
-  transition: transform 500ms ease-in-out;
-  border-radius: 6px;
-}
-.skills-card-box1:hover,
-.skills-card-box2:hover,
-.skills-card-box3:hover,
-.skills-card-box4:hover,
-.skills-card-box5:hover,
-.skills-card-box6:hover,
-.skills-card-box7:hover {
-  transform: scale(1.05);
-  cursor: pointer;
-  box-shadow: 0 8px 16px 0 gray;
-}
 .marqua {
   display: flex;
   gap: 2em;
@@ -483,265 +381,6 @@ li:active:after {
   }
   100% {
     transform: translateX(-100%);
-  }
-}
-@media screen and (max-width: 670px) and (max-height: 380px) {
-  .skills-card-box1,
-  .skills-card-box2,
-  .skills-card-box3,
-  .skills-card-box4,
-  .skills-card-box5,
-  .skills-card-box6,
-  .skills-card-box7 {
-    width: 280px;
-    height: 270px;
-  }
-}
-@media screen and (max-width: 770px) and (max-height: 1030px) {
-  .skills-card-box1,
-  .skills-card-box2,
-  .skills-card-box3,
-  .skills-card-box4,
-  .skills-card-box5,
-  .skills-card-box6,
-  .skills-card-box7 {
-    width: 330px;
-    height: 230px;
-  }
-}
-@media screen and (max-width: 900px) and (max-height: 1200px) {
-  .skills-card-box1,
-  .skills-card-box2,
-  .skills-card-box3,
-  .skills-card-box4,
-  .skills-card-box5,
-  .skills-card-box6,
-  .skills-card-box7 {
-    width: 350px;
-    height: 230px;
-  }
-}
-
-@media screen and (max-width: 600px) and (max-height: 800px) {
-  .skills-card-box1,
-  .skills-card-box2,
-  .skills-card-box3,
-  .skills-card-box4,
-  .skills-card-box5,
-  .skills-card-box6,
-  .skills-card-box7 {
-    width: 450px;
-    height: 230px;
-  }
-}
-@media screen and (max-width: 800px) and (max-height: 1050px) {
-  .skills-card-box1,
-  .skills-card-box2,
-  .skills-card-box3,
-  .skills-card-box4,
-  .skills-card-box5,
-  .skills-card-box6,
-  .skills-card-box7 {
-    width: 330px;
-    height: 230px;
-  }
-}
-@media screen and (max-width: 550px) and (max-height: 750px) {
-  .skills-card-box1,
-  .skills-card-box2,
-  .skills-card-box3,
-  .skills-card-box4,
-  .skills-card-box5,
-  .skills-card-box6,
-  .skills-card-box7 {
-    width: 450px;
-    height: 200px;
-  }
-}
-@media screen and (max-width: 800px) and (max-height: 550px) {
-  .skills-card-box1,
-  .skills-card-box2,
-  .skills-card-box3,
-  .skills-card-box4,
-  .skills-card-box5,
-  .skills-card-box6,
-  .skills-card-box7 {
-    width: 310px;
-    height: 250px;
-  }
-}
-@media screen and (max-width: 860px) and (max-height: 1300px) {
-  .skills-card-box1,
-  .skills-card-box2,
-  .skills-card-box3,
-  .skills-card-box4,
-  .skills-card-box5,
-  .skills-card-box6,
-  .skills-card-box7 {
-    width: 350px;
-    height: 250px;
-  }
-}
-@media screen and (max-width: 1300px) and (max-height: 900px) {
-  .skills-card-box1,
-  .skills-card-box2,
-  .skills-card-box3,
-  .skills-card-box4,
-  .skills-card-box5,
-  .skills-card-box6,
-  .skills-card-box7 {
-    width: 330px;
-    height: 250px;
-  }
-}
-@media screen and (max-width: 670px) and (max-height: 380px) {
-  .skills-card-box1,
-  .skills-card-box2,
-  .skills-card-box3,
-  .skills-card-box4,
-  .skills-card-box5,
-  .skills-card-box6,
-  .skills-card-box7 {
-    width: 280px;
-    height: 300px;
-  }
-}
-/*....STARTING OF MODAL....*/
-
-.modal {
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  top: 0;
-  display: grid;
-  place-items: center;
-  transition: 0.5s ease-in-out;
-  background-color: #181a1998;
-}
-.modal-box {
-  height: 80vh;
-  width: 60vw;
-  background-color: transparent;
-  color: white;
-  border-radius: 15px;
-  position: relative;
-  transition: 0.5s ease-in-out;
-}
-.modal-backgroun {
-  background-color: #3aa672;
-  position: absolute;
-  height: 80vh;
-  width: 60vw;
-  border-radius: 15px;
-}
-.modal-backgroun h1 {
-  color: rgba(255, 255, 255, 0.103);
-  font-size: 4em;
-  font-family: TypoUpright BT;
-}
-.modal-bnt-box {
-  height: 10vh;
-}
-.cancle-bnt {
-  font-size: xx-large;
-  background-color: transparent;
-  margin: 0.3em;
-  float: right;
-
-  display: block;
-  border: none;
-  color: rgb(245, 8, 8);
-  cursor: pointer;
-}
-.modal-cont {
-  display: flex;
-}
-.modal-img {
-  width: 100%;
-}
-.modal-content {
-  width: 100%;
-  height: 100%;
-}
-.modal-form {
-  padding: 1em;
-  background-color: white;
-  width: 80%;
-  border-radius: 5px;
-}
-.modal-content h2 {
-  font-size: 3vw;
-  padding-bottom: 1rem;
-}
-.modal-content p {
-  padding-bottom: 1vw;
-}
-.modal-type {
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-bottom: 2px solid #3aa672;
-  width: 100%;
-  margin-bottom: 0.5rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-.modal-btn {
-  margin-top: 2em;
-  padding: 0.4rem 0.8rem;
-  background-color: #3aa672;
-  color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 3px;
-}
-@media screen and (max-width: 600px) {
-  .cancle-bnt {
-    font-size: x-large;
-  }
-  .modal-content h2 {
-    font-size: 3vw;
-    padding-bottom: 1rem;
-  }
-  .modal-img {
-    display: none;
-  }
-  .modal-content {
-    width: 90%;
-    margin: auto;
-  }
-  .modal-form {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 900px) {
-  .modal-content h2 {
-    font-size: 3vw;
-  }
-}
-@media screen and (max-width: 900px), screen and (max-height: 400px) {
-  .modal-content h2 {
-    font-size: 3vw;
-  }
-  .modal-type {
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: 2px solid #3aa672;
-    width: 100%;
-    margin-bottom: 0.2rem;
-    padding-top: 0.2rem;
-    padding-bottom: 0.2rem;
-  }
-  .modal-btn {
-    margin-top: 1em;
-    padding: 0.2rem 0.4rem;
-    background-color: #3aa672;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 3px;
   }
 }
 
@@ -848,23 +487,3 @@ li:active:after {
 }
 
 /*....STARTING OF FOOTER....*/
-
-.footer {
-  text-align: center;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-.social {
-  color: #3aa672;
-  background-color: whitesmoke;
-  margin: 0px 1.5rem;
-  font-size: 2vw;
-  padding: 0.5rem;
-  border-radius: 50%;
-  transition: 0.31s;
-}
-.social:hover {
-  background-color: #3aa672;
-  color: white;
-  transition: 0.31s;
-}
